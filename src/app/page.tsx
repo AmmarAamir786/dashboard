@@ -1,10 +1,11 @@
+"use client"
 import React, { useState, useEffect } from 'react';
 
 // Google Sheets Integration Constants
-const SPREADSHEET_ID = '1DT9loqsvga98jpk5nbAhHiT-F6Jgd_sHT8FvYv_XQfk';
-const API_KEY = 'AIzaSyBIsKBRG8qCE-ep6FjdUwI-BkL_wagSaEU';
-const CLIENT_ID = '84822048876-gaimssqb1kfiulc98g7r5uafhuo71830.apps.googleusercontent.com';
-const SCOPE = 'https://www.googleapis.com/auth/spreadsheets';
+const SPREADSHEET_ID = process.env.SPREADSHEET_ID
+const API_KEY = process.env.API_KEY
+const CLIENT_ID = process.env.CLIENT_ID
+const SCOPE = process.env.SCOPE
 
 // Checklist Item Types
 const CHECKLIST_ITEMS = [
